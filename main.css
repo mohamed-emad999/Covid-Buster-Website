@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+section .title{
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-weight:600;
+    font-size:40px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background:#111;
+    transform: translateX(-50%);
+}
+
+section .title::after{
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    padding: 5px;
+    color: darkcyan;
+    background:#fff;
+    transform: translateX(-50%);
+}
+
+section{
+    padding: 60px 0;
+}
+
+.main{
+    font-family: 'Poppins', sans-serif;
+}
+
+.main .main-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.main{
+    color: #000;
+    background:#fff;
+}
+
+.main .title::after{
+    content: "Where to go?";
+}
+
+.main .main-content .card {
+    width: calc(33% - 20px);
+    background:none;
+    text-align: center;
+    border: solid darkcyan;
+    border-radius: 25px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition:linear all 0.3s;
+}
+
+.main .main-content .card:hover{
+    font-weight: 600;
+    transform: scale(1.03);
+}
+
+.main .main-content .card .safe{
+    color: green;
+    text-align: center;
+}
+
+.main .main-content .card .not-safe{
+    color: red;
+    text-align: center;
+}
+
+/*.main .main-content .card img{
+    size: ;
+}*/
+
+.main .main-content .card .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0 15px 0;
+}
+
+.main .main-content .card p{
+    text-align: justify;
+}
+
+/*Styling for small devices goes here*/
+@media (max-width: 991px) {
+    .max-width{
+    padding:0 30px;
+    }
+}
+
+@media (max-width: 947px) {
+    .max-width{
+    max-width: 800px;
+    }
+
+    .main .main-content .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width{
+    padding:0 23px;
+    }
+
+    .main .main-content .card {
+    width: 100%;
+    }
+}
