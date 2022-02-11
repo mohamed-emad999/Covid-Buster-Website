@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+section .title{
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-weight:600;
+    font-size:40px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+section{
+    padding: 60px 0;
+}
+
+.smain{
+    font-family: 'Poppins', sans-serif;
+}
+
+.smain .smain-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.smain .smain-content .left{
+    width: 45%;
+}
+
+.smain .smain-content .left img{
+    height: 400px;
+    width: 450px;
+    margin-left: 100px;
+    object-fit: cover;
+}
+
+.smain .smain-content .right{
+    width: 45%;
+    border: solid darkcyan;
+    border-radius: 20px;
+    margin-right: 100px;
+    align-items: center;
+}
+
+.smain .smain-content .right .text{
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 450;
+}
+
+.smain .smain-content .safe{
+    color: green;
+}
+
+.smain .smain-content .not-safe{
+    color: red;
+}
+
+.smain .smain-content .right ul{
+    margin-left: 35px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    text-align: justify;
+}
+
+/*Styling for small devices goes here*/
+@media (max-width: 1104px) {
+    .smain .smain-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width{
+    padding:0 30px;
+    }
+}
+
+@media (max-width: 947px) {
+    .max-width{
+    max-width: 800px;
+    }
+
+    .smain .smain-content .column{
+    width: 100%;
+    }
+
+    .smain .smain-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .smain .smain-content .left{
+        flex: 100%;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width{
+    padding:0 23px;
+    }
+}
